@@ -1,0 +1,97 @@
+/*FIRSTVIEW*/
+.firstView__container{
+    width: 100%;
+    height: 550px;
+    display: grid;
+    place-items: center;
+    background-color: aqua;
+}
+
+
+  /*TOPICS*/
+  .topics{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    display: grid;
+    place-items: center;
+    background-color: #343434;
+  }
+
+    .topics__container{
+        width: 350px;
+        height: auto;
+    }
+
+    @media(min-width: 768px){
+        .topics__container{
+            width: 768px;
+        }
+    }
+
+        .topics__container__heading{
+            width: auto;
+            height: 50px;
+            display: grid;
+            place-items: center;
+        }
+
+            .topics__container__heading h2{
+                color: #fff;
+            }
+
+        .topics__container__contents{
+            width: auto;
+            max-height: 350px; /* 表示エリアの高さを固定 */
+            overflow-y: scroll; /* 縦スクロールのみ表示 */
+            padding-right: 10px; /* スクロールバーと被らないように */
+        }
+
+            .topics__container__contents__inner{
+                width: auto;
+                height: auto;
+                background-color: #343434;
+            }
+
+            .topics__container__contents__inner:not(:first-child){
+                margin-top: 20px;
+            }
+
+                .topics__container__contents__inner__image{
+                    width: auto;
+                    height: 150px;
+                    background-image: url(dandbsystem.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    border: solid 0.5px #000;
+                }
+
+                .topics__container__contents__inner__text{
+                    width: auto;
+                    height: auto;
+                    background-color: #fff;
+                    border: solid 0.5px #000;
+                }
+
+                    .topics__container__contents__inner__text p{
+                        font-family: "Noto Serif JP", serif;
+                        font-optical-sizing: auto;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 16px;
+                        line-height: 1.2rem;
+                    }
+
+                        .topics__date{
+                            text-align: right;
+                            color: #1a1a1a;
+                        }
+
+/*NEXT SECTION*/
+.nextSection__container{
+    width: 100%;
+    height: 300px;
+    display: grid;
+    place-items: center;
+    background-color: aquamarine;
+}
